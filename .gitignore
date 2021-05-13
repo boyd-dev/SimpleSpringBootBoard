@@ -1,0 +1,27 @@
+HELP.md
+.gradle
+build/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+src/main/resources/META-INF/
+
+.README.md.html
+
+### frontend app chunk
+src/main/resources/static/static
+src/main/resources/static/asset-manifest.json
+src/main/resources/static/favicon.ico
+src/main/resources/static/index.html
+src/main/resources/static/*.png
+src/main/resources/static/manifest.json
+src/main/resources/static/robots.txt
