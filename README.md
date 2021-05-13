@@ -89,3 +89,5 @@ CKEditor에서 이미지가 첨부되면 즉시 파일이 서버로 전송되어
    ```    
    `index.html`은 프론트엔드 리액트 애플리케이션의 엔트리 페이지에 해당합니다.
    
+   <img src="https://github.com/boyd-dev/SimpleSpringBootBoard/blob/main/example.PNG"/>
+   
