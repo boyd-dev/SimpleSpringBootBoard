@@ -58,11 +58,9 @@ CKEditor에서 이미지가 첨부되면 즉시 파일이 서버로 전송되어
 백엔드 서버에서는 파일의 위치를 `http://localhost:8080/uploadimages/mypic.png`로 리턴하고 CKEditor는 이 URL을 저장합니다.    
   
 3. 데이터베이스  
-   데이터베이스는 MySQL 8.0.23을 사용합니다. 설정 파일의 `jdbc:` 부분을 변경하면 되겠습니다.
+   데이터베이스는 MySQL 8.0.23을 사용합니다. 설정 파일의 `jdbc:` 부분을 변경하면 되겠습니다. JPA를 통해 데이터베이스에 저장하므로 관련된 상세 설정은 `MyJpaConfig.java`를 참조하시기 바랍니다. 
    
-   JPA를 통해 데이터베이스에 저장하므로 관련된 상세 설정은 `MyJpaConfig.java`를 참조하시기 바랍니다. 
-   `hibernate.hbm2ddl.auto`는 `update`로 설정되어 있습니다.   
-   엔티티는 T_BOARD 와 T_FILE 두 개가 있지만 T_FILES은 사용되지 않습니다(나중에 일반 파일 첨부를 위해 만들어 놓은 것임). 
+   `hibernate.hbm2ddl.auto`는 `update`로 설정되어 있고 엔티티는 T_BOARD 와 T_FILE 두 개가 있지만 T_FILES은 사용되지 않습니다(나중에 일반 파일 첨부를 위해 만들어 놓은 것임). 
 
 4. Gradle 빌드  
    스프링 부트의 build.gradle 스크립트에서 프론트엔드 애플리케이션을 빌드할 수 있습니다. 이 때 Node.js 빌드 플러그인을 사용합니다. 
