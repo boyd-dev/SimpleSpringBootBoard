@@ -27,7 +27,7 @@
   - react-js-pagination
   - react-loader-spinner    
   
-  게시글 목록은 ag-grid를, 게시글 작성에는 CKEditor5 Classic 에디터를 사용합니다. CKEditer에서 제공하는 이미지 게시판 플러그인도 포함되어 있습니다. 이미지 게시판은 글 작성시 
+  게시글 목록은 ag-grid를, 작성에는 CKEditor5 Classic 에디터를 사용합니다. CKEditer에서 제공하는 이미지 게시판 플러그인도 포함되어 있습니다. 이미지 게시판은 글 작성시 
   업로드된 이미지가 URL로 링크되기 때문에 백엔드 서버의 특정 디렉토리에 이미지를 업로드하도록 구현되어 있습니다(프론트엔드 애플리케이션과 관련된 상세 내용은 해당 프로젝트의 
   [README](https://github.com/boyd-dev/SimpleReactApp/tree/board)를 참조).
 
