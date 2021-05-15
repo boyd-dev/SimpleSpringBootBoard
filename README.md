@@ -9,9 +9,10 @@
   
 * 백엔드 애플리케이션  
   스프링 부트를 기반으로 다음과 같은 기술들이 사용되었습니다.
-  - Spring Security OAuth2 (네이버, 구글)
-  - JWT  
-  - JPA (데이터베이스는 MySQL 8.0.23)  
+  - Spring MVC
+  - JPA (데이터베이스는 MySQL 8.0.23)
+  - Spring Security OAuth2(네이버, 구글), JWT  
+    
   
   
 * 프론트엔드 애플리케이션  
