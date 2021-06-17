@@ -28,7 +28,7 @@ public class JwtUtils {
     public Boolean isValidateToken(String token) {
     	try {
 	        
-    		final String subject = (String) getBobyFromToken(token).get("sub");
+    		final String subject = (String) getBodyFromToken(token).get("sub");
 	        return !subject.isEmpty();
 	        
     	} catch (Exception e) {
@@ -39,7 +39,7 @@ public class JwtUtils {
     // 토큰 만료 검사
     public boolean isTokenExpired(String token) {
     	try {
-	    	long exp = (Long) getBobyFromToken(token).get("exp");
+	    	long exp = (Long) getBodyFromToken(token).get("exp");
 	        final Date expiration = new Date(exp);
 	        
 	        return expiration.before(new Date());
@@ -83,7 +83,7 @@ public class JwtUtils {
         			  .compact();
     }
     
-    public Map<String,Object> getBobyFromToken(String token){
+    public Map<String,Object> getBodyFromToken(String token){
 		String secret = env.getProperty("jwt.secret");
         return Jwts.parser().setSigningKey(secret).parseClaimsJws(token).getBody();
     }

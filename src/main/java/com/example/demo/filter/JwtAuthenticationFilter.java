@@ -90,7 +90,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 					response.setStatus(HttpServletResponse.SC_FORBIDDEN);					
 				}
 					
-				Map<String, Object> attributes = jwtUtils.getBobyFromToken(jwt);
+				Map<String, Object> attributes = jwtUtils.getBodyFromToken(jwt);
 				
 				if (logger.isDebugEnabled()) {
 					logger.debug("JWT::" + attributes);					
